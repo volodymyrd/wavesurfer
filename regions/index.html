@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- main wavesurfer.js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+
+    <!-- wavesurfer.js regions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<div id="waveform"></div>
+
+<p align="center">
+    <button class="btn btn-primary" onclick="wavesurfer.play(20, 25)">
+        <i class="glyphicon glyphicon-play"></i>
+        Play
+    </button>
+    <button class="btn btn-primary" onclick="wavesurfer.seekTo(0.7)">
+        seekTo
+    </button>
+</p>
+</body>
+</html>
